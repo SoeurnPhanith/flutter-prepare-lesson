@@ -1,0 +1,56 @@
+**** What is important widget in flutter? ***
+    => Layout or UI or import widget jea kar deal flutter reab jom widget
+for UI doch jea Row, Column, Stack, ListView, GridView.....
+
+
+1.Row ? 
+    => Row jea widget muy deal dak oy child bos vea tv jea jour dek 
+(horizontal).
+    +Syntax : 
+    Row(
+        children: [
+            Widget1(),
+            Widget2(),
+            Widget3(),
+        ],
+    )
+
+    +Importance propoties in Row : 
+        1.  mainAxisAlignment : use for manage ler position of children
+            ney horizontal bos Row ng hx vea mean value(start, center,end
+            spaceBetween : ចែកចន្លោះគ្នាដោយប្រើ empty space,
+            spaceAround : ចន្លោះត្រូវបានចែកគ្នាបានសមគ្នា,
+            spaceEvendly: ចែកជាកម្រិតស្មើគ្នា)
+
+        2.  crossAxisAlignment : user for manage ler position ney vertical
+            bos Row ng hx mean value (start,center,end)
+
+        3.mainAxisSize : កំណត់ទំហំ Row តើត្រូវ full width ឬ ត្រឹមតែប៉ុណ្ណោះ?
+            having value(min, max) default on max.
+
+
+2.Column?
+    =>Column vea jea widget deal dak children oy tv jea jour chor
+(vertical) deal reab pii ler jos krom....
+    +Syntax
+    Column(
+        children: [
+            Widget1(),
+            Widget2(),
+            Widget3(),
+        ],
+    );
+    +Importance propoties in Column: 
+        1. mainAxisAlignment : manage on position of code from ler tv krom
+           doy bos Column ng hx vea mean value(start, center,end
+            spaceBetween : ចែកចន្លោះគ្នាដោយប្រើ empty space pii ler mk rkom,
+            spaceAround : ចន្លោះត្រូវបានចែកគ្នាបានសមគ្នា,
+            spaceEvendly: ចែកជាកម្រិតស្មើគ្នា)
+        
+        2.  crossAxisAlignment : user for manage ler position ney vertical
+            bos Row ng hx mean value (start,center,end)
+
+        3.mainAxisSize : កំណត់ទំហំ Row តើត្រូវ full width ឬ ត្រឹមតែប៉ុណ្ណោះ?
+            having value(min, max) default on max.
+
+
