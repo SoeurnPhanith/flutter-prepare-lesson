@@ -54,3 +54,125 @@ for UI doch jea Row, Column, Stack, ListView, GridView.....
             having value(min, max) default on max.
 
 
+3.Stack?
+    =>.Stack គឺជា layout widget ដែលអនុញ្ញាតឱ្យ widget 
+    ច្រើន ដាក់ត្រួតលើគ្នា (overlap) ដូចជា layer។
++Syntax
+    Stack(
+        children: [
+            Widget1,
+            Widget2,
+            Widget3,
+         ],
+    )
+
++propoties using in stack : [
+    1.children : dak widget ler knea ban
+    2.fit : manage size rbos non-positional widget
+    3.alignment : define ទីតាំង default របស់ children
+    4.clipBahavoir : កាត់ (clip) widget ដែលលើស Stack
+]
+
++Widget using in stack : {
+    1.  Positioned : use for set absulute position or specific position
+     of child and having propoties : [
+      +top : space on top
+        +bottom : space on bottom
+        +left : space on left
+        +right : space on right
+        +width : define width
+        +height : define height
+    ]
+    2.  Align : use for set relative postion of widget and it having
+        propoties : [
+            +alignment : Alignment.bottomRight
+            +alignment : Alignment.topLeft
+            +alignment : Alignment.center
+        ]
+    3.  Opacity : use for make widget ស្រអាប់ / ថ្លា and having
+    propoties : [
+        +opacity : value (double)
+    ]
+    4.  ClipRRect/ ClipOval : use for កាត់ shape (rounded / circle)
+    5.  Tranform : user for Rotate / Scale / Move widget
+    6.  IgnorePointer widget ដែលប្រើសម្រាប់
+    មិនអនុញ្ញាតឱ្យ child widget ទទួល event touch / click and having propoties [
+        +ignore : true == can not click 
+        +ignore : false == can click
+    ]
+}
+
+
+4.Container?
+    =>container is a basic powerful widget in flutter deal use for
+define size(box), background......
+
+    +យើងប្រើ Container ពេលយើងចង់៖
+✅ កំណត់ size widget
+✅ បន្ថែម background color / border / radius
+✅ ដាក់ padding & margin
+✅ Align widget នៅទីតាំងណាមួយ
+✅ បង្កើត UI card / box / panel
+✅ Combine layout + style ក្នុង widget តែមួយ
+
+    +propoties use in Container : [
+        1.width : set width
+        2.height : set height
+        3.child : use for put one more Widget on it
+        4.padding : inner space of container
+        5.margin : outer space of container
+        6.alignment
+        7.decoration : use for design or more implement to container like:{
+            +color  
+            +borderRaduis
+            +border
+            +boxShadow
+            +gradient
+            +Tranform
+            +clipBahavoir
+        }
+    ]
+
+
+5.Expanded?
+    =>Expanded គឺជា widget ដែល បង្ខំ child ឲ្យ យក
+     space ទាំងអស់ដែលនៅសល់ ក្នុង Row, Column, ឬ Flex.
+
++ប្រើ Expanded នៅពេល:
+    -ចង់ឲ្យ widget ពង្រីកពេញ space
+    -បង្ការ overflow error
+    -បែងចែក space ស្មើៗគ្នា
+
+
+6.Flexible?
+    =>Flexible គឺជា widget ដែល អនុញ្ញាត child ឲ្យ យក space តែប៉ុណ្ណោះដែលវាត្រូវការ
+     មិនបង្ខំឲ្យ fill space ទាំងអស់.
+
+
++Expanded vs Flexible (Key Difference ⭐)
+.Feature	                Expanded	         Flexible
+.Fill space  	            ✅ Always	        ❌ Not always
+.Default fit	            tight	             loose
+.Overflow safe       	    ✅	                ✅
+.Control size	            ❌	                ✅
+
+
+7.ListView?
+    =>ListView គឺជា widget សម្រាប់បង្ហាញ list នៃ data scroll
+    បាន (vertical / horizontal)ប្រើច្រើនបំផុតក្នុង app
+    (chat, product list, settings, menu).
+
++propoties use in ListView:[
+    1. scrollDecoration : (Axis.vertical / Axis.horizontal)
+    2. physic : (Bouncing / Clamping / NeverScrollable)
+       user for manage begavoir of scroll
+    3. shrinkWrap : (true / false)
+    4. reverse : (true / false) use for scroll on bottom to top
+    5. padding : space about list
+    6. itemExtent : use for define width / height to constraint
+    7. cacheExtent : Preload item មុន scroll ដល់
+    8. primary : (true/false) កំណត់ ListView ជា primary scroll
+    9. keyboradDissmissBahavoir : បិទ keyboard ពេល scroll
+   10. children : put another widget
+   
+]
