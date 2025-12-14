@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/home/yutaaaa/Documents/flutter_mobile_app/flutter_prepare_lesson/linux"
+    "cmake.sourceDirectory": "/home/yutaaaa/Documents/flutter_mobile_app/flutter_prepare_lesson/linux",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

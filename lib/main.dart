@@ -3,6 +3,8 @@ import 'package:flutter_prepare_lesson/layout/column_widget.dart';
 import 'package:flutter_prepare_lesson/layout/container_widget.dart';
 import 'package:flutter_prepare_lesson/layout/expanded_widget.dart';
 import 'package:flutter_prepare_lesson/layout/flexible_widget.dart';
+import 'package:flutter_prepare_lesson/layout/gridview_widget.dart';
+import 'package:flutter_prepare_lesson/layout/listview_widget.dart';
 import 'package:flutter_prepare_lesson/layout/row_widget.dart';
 import 'package:flutter_prepare_lesson/layout/stack_widget.dart';
 
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner:  false,
-      home: FlexibleWidget()
+      home: GridviewWidget()
     );
   }
 }

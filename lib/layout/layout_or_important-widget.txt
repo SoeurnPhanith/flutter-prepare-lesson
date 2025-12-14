@@ -176,3 +176,31 @@ define size(box), background......
    10. children : put another widget
    
 ]
+
+
+8.GridView?
+=> GridView is a scrollable grid of widgets អាច
+   horizontal / vertical scroll
+
++propoties using in GridView :[
+    +crossAxisCount :  count number of Column
+    +mainAxisSpacing : vertical space between items
+    +crossAxisSpacing : horizontal space between item
+    +childAspectRatio : width / height ratio of item
+    +scrollDirection  : vertical / horizontal scroll
+]
+
++Note : when use GridView & ListView must be having container
+wrapped on it if you use them i Row or Column. if not put container
+it will show nothing on UI.
+
+
+
+9.SingleScrollChildView?
+    =>SingleChildScrollView គឺ Widget មួយដែល អាច scroll child widget បាន ប្រសិនបើ content វាធំជាង screen។
+ប្រើពេលអ្នក មាន content dynamic / long content ប៉ុន្តែ child មួយទេ។
+មិន recommend ប្រើសម្រាប់ list ធំ → ប្រើ ListView កាន់តែល្អ។
+
+10.SafeArea?
+    =>SafeArea គឺ Widget មួយនៅ Flutter ដែល ធានាថា content របស់អ្នកមិនបិទជាមួយ status bar, notch, navigation bar, ឬ edges នៃ screen។
+ជាធម្មតា សម្រាប់ iPhone មាន notch, Android មាន status bar → SafeArea ជួយ scroll/position content ឲ្យមើលស្អាត។
