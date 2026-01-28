@@ -1,0 +1,172 @@
+***Scrollable Widget គឺជា widget ដែលអនុញ្ញាតឲ្យ UI អូស (scroll) ឡើង-ចុះ ឬ ឆ្វេង-ស្តាំ
+ប្រើពេល content ធំជាង screen។ ហើយវាមានច្រើនច្រើនប្រភេទ : 
+    1.ListView
+    2.ListView.Builder
+    3.ListView.Separated
+    4.GridView
+    5.GridView.Builder
+    6.PageView
+
+----------------------------------------------------------------
+1.ListView?
+    =>ListView គឺជា widget សម្រាប់បង្ហាញ list នៃ data scroll
+    បាន (vertical / horizontal)ប្រើច្រើនបំផុតក្នុង app
+    (chat, product list, settings, menu).
+
++propoties use in ListView:[
+    1. scrollDecoration : (Axis.vertical / Axis.horizontal)
+    2. physic : (Bouncing / Clamping / NeverScrollable)
+       user for manage begavoir of scroll
+    3. shrinkWrap : (true / false)
+    4. reverse : (true / false) use for scroll on bottom to top
+    5. padding : space about list
+    6. itemExtent : use for define width / height to constraint
+    7. cacheExtent : Preload item មុន scroll ដល់
+    8. primary : (true/false) កំណត់ ListView ជា primary scroll
+    9. keyboradDissmissBahavoir : បិទ keyboard ពេល scroll
+   10. children : put another widget  
+]
+
+
+-----------------------------------------------------------------
+2.ListView.Builder?
+=>ListView.Builder is a scrollable widget use for show data or item
+and it's use for many item(API, Database, List).
+
+Syntax : 
+
+    ListView.builder(
+        itemCount: ,
+        itemBuilder: (context, index) {
+            return Widget;
+        },
+    );
+
+
+-----------------------------------------------------------------
+3.ListView.Separated?
+=>ListView.separated គឺជា ListView ដែលអនុញ្ញាតឲ្យអ្នក បង្កើត item និង separator 
+(Divider / space) រវាង item មួយៗដោយមិនចាំបាច់ដាក់ Divider នៅក្នុង itemBuilder.
+
+Syntax:
+    ListView.separated(
+        itemCount: ,
+        itemBuilder: (context, index) {
+            return Widget;
+        },
+        separatorBuilder: (context, index) {
+            return Widget;
+        },
+    );
+
+-----------------------------------------------------------------
+
+4.Nested listView? 
+=> nested listview is a listview inside listview. 
+example : facebook feed, comment in facebook
+
+-----------------------------------------------------------------
+
+5.GridView?
+=> GridView is a scrollable grid of widgets អាច
+   horizontal / vertical scroll
+
++propoties using in GridView :[
+    +crossAxisCount :  count number of Column
+    +mainAxisSpacing : vertical space between items
+    +crossAxisSpacing : horizontal space between item
+    +childAspectRatio : width / height ratio of item
+    +scrollDirection  : vertical / horizontal scroll
+]
+
+
+---------------------------------------------------------------
+6.CustomScrollView? 
+=>CustomScrollView គឺជា scroll container មួយ វា មិនប្រើ ListView / Column
+ ត្រង់ៗទេ គឺ វាប្រើ Sliver (scrollable portion)។​
+
+ + Use CustomScrollView when : 
+    -AppBar បង្រួម / ពង្រីក (collapsing app bar)
+    -Header + ListView + GridView ក្នុង scroll តែមួយ
+    -PageView + List + Widget ផ្សេងៗ scroll រួមគ្នា
+    -Nested scroll ដោយ performance ខ្ពស់
+
++ Sliver ជាអ្វី?
+Sliver = scrollable piece
+Sliver ទូទៅ៖
+    -SliverAppBar
+    -SliverList
+    -SliverGrid
+    -SliverToBoxAdapter
+
+⚠️ CustomScrollView ទទួលតែ Sliver widgets ប៉ុណ្ណោះ. 
+
++Propoties useful in CustomScrollView width : 
+    1.  slivers[] : store only slivers widget
+    2.  scrollDecoration = .horizontal | vertical
+    3.  reverse
+    4.  scrollController  : controll scroll position
+    5.  primary
+    6.  physic : common value (
+            BouncingScrollPhysics()      // iOS
+            ClampingScrollPhysics()      // Android
+            NeverScrollableScrollPhysics()
+            AlwaysScrollableScrollPhysics()
+        )
+    7.  shrinkWrap : auto size follow content
+    8.  
+
+
+
++ All Sliver Widget : 
+
+    1.  SliverAppBar(
+            title: Text('Title'),
+            leading: Icon(Icons.menu),
+            actions: [],
+            pinned: true,
+            floating: false,
+            snap: false,
+            expandedHeight: 200,
+            collapsedHeight: 80,
+            flexibleSpace: FlexibleSpaceBar(
+                background : Widget
+            ),
+            backgroundColor: Colors.blue,
+        )
+
+    2.  SliverList(
+            delegate: SliverChildBuilderDelegate(
+                (context, index) {
+                    return ListTile(title: Text('Item $index'));
+                },
+                 childCount: 20,
+            ),
+        )
+
+    3.  SliverGrid(
+            delegate: SliverChildBuilderDelegate(
+                (context, index) => Container(),
+                childCount: 10,
+            ),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 10,
+                childAspectRatio: 1,
+            ),
+         )
+
+
+    4.  SliverPadding(
+            padding: EdgeInsets.all(16),
+            sliver: SliverList(...),
+        )
+
+    5.  SliverFillRemaining(
+            hasScrollBody: false,
+            child: Center(child: Text("Empty")),
+         )
+
+
+

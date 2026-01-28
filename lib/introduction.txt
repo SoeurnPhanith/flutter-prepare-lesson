@@ -1,0 +1,38 @@
+1.What is flutter?
+-->>>​Flutter គឺជា Software development toolkit មួយដែលបង្កើតឡើងដោយក្រុមហ៊ុន
+Google សម្រាប់បង្កើតទៅលើ cross-platfrom apps ហើយវាក៏អាចបង្កើតជា Desktop 
+Application and Web App បានផងដែរ។  ដោយflutter វាមានទៅលើ Package,
+Plugin, Widget សម្រាប់ធ្វើការ design ទៅលើរូបរាងរបស់ App បាន។ ហើយ Flutter មិនមែន
+ជា Programming Language មួយទេ​ វាគឺជា Frameworkរបស់ភាសា Dart Programming។
+
+
+
+2. Why use flutter or flutter is popular? 
+---->>> Flutter popular because : 
+    .It's can build IOS and Android App in Same time(Cross-Platform)
+    .Fast development(Hot reload & hot restart) to refresh UI
+    .Beatiful UI & Customize UI 
+    .High Performance
+    .Use by big companies in World-Wide 
+    .Easy to learn having simple Syntax to build
+
+
+3. Command useful in flutter buildig!
+    ->flutter doctor                 : use for check flutter installation 
+    ->flutter create project-name    : use for create project
+    ->flutter run                    : use for run flutter project
+    ->flutter device                 :  Check all device name having on machine
+    ->flutter emulators
+      flutter emulators --launch <emulator_id> : use for open emulator
+    ->flutter pub get                : use for get or install package again
+    ->flutter pub upgrade            : use for updrade package
+    ->flutter clean                  : use for clean project or clear cache
+    ->flutter build apk              : use for deploy private app to user(android)
+    ->flutter build ios              : use for deploy private app to user(IOS)
+    ->flutter build appbundle        : build app to play store or app store
+    ->flutter analyze                : Analyse code
+    ->flutter --version              : check flutter version
+    ->flutter format .               : use for format code to pretty code
+
+
+
