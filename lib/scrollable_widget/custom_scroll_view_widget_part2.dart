@@ -10,7 +10,7 @@ class CustomScrollViewWidgetPart2 extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
 
-          /// 🔹 Sliver App Bar
+          /// Sliver App Bar
           SliverAppBar(
             expandedHeight: 160,
             pinned: true,

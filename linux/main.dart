@@ -12,7 +12,10 @@ import 'package:flutter_prepare_lesson/scrollable_widget/listview_builder_widget
 import 'package:flutter_prepare_lesson/scrollable_widget/listview_separated_widget.dart';
 import 'package:flutter_prepare_lesson/scrollable_widget/listview_widget.dart';
 import 'package:flutter_prepare_lesson/scrollable_widget/nested_list_view.dart';
+import 'package:flutter_prepare_lesson/scrollable_widget/nested_scroll_view_widget_part1.dart';
+import 'package:flutter_prepare_lesson/scrollable_widget/nested_scroll_view_widget_part2.dart';
 import 'package:flutter_prepare_lesson/scrollable_widget/page_view_widget.dart';
+import 'package:flutter_prepare_lesson/scrollable_widget/scroll_bar_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner:  false,
-      home:CustomScrollViewWidgetPart2()
+      home:ScrollBarWidget()
     );
   }
 }

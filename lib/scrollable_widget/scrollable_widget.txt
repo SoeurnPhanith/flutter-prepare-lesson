@@ -169,4 +169,54 @@ Sliver ទូទៅ៖
          )
 
 
+------------------------------------------------------------------------------------
 
+7. NestedScrollView Widget?
+=>NestedScrollView គឺជា widget សម្រាប់ sync scroll រវាង
+Outer scroll (AppBar / Header) និង Inner scroll 
+(ListView, GridView, TabBarView). 
+
++NestedScrollView
+ ├── headerSliverBuilder (OUTER scroll)
+ │     └── SliverAppBar
+ │
+ └── body (INNER scroll)
+       └── ListView / GridView / TabBarView
+
+
+---------------------------------------------------------------------------
+8. ScrollBar Widget?
+=>Scrollbar គឺជា visual indicator បង្ហាញថា អ្នកកំពុងស្ថិតនៅទីណា
+ ក្នុង scrollable content។
+
+ +Why use ScrollBar ? 
+ => beccause UX Problems without Scrollbar : 
+    1. User មិនដឹង content វែងប៉ុនណា
+    2. Desktop / Web users រំពឹង scrollbar
+    3. Large lists → lost orientation
+
+ + Propoties to use with Scrollable : 
+ [
+    1.controller : use for connect scrollBar to scrollable Widget
+    2.thumbVisibility : true/false
+    3.trackVisibility : true/false (show background)
+    4.thickness
+    5.raduis
+    6.scrollbarOrientation : left / right
+ ]
+-----------------------------------------------------------------------------
+9.DraggableScrollableSheet Widget?
+
+
+-----------------------------------------------------------------------------
+10.RefreshIndicator Widget?
+
+
+-----------------------------------------------------------------------------
+11.ReorderableListView Widget?
+
+
+--------------------------------------------------------------------
+12.ListWheelScrollView Widget?
+
+-----------------------------------------------------------------------
