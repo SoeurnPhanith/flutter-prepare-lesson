@@ -206,6 +206,18 @@ Outer scroll (AppBar / Header) និង Inner scroll
  ]
 -----------------------------------------------------------------------------
 9.DraggableScrollableSheet Widget?
+=>DraggableScrollableSheet គឺជា widget ដែលអនុញ្ញាតឲ្យ:
+
+📦 Content អាច drag ឡើង-ចុះ
+📜 Content ខាងក្នុង scroll
+
++Propoties to use with DraggableScrollableSheet [
+    1. initialChildSize : initlailize height
+    2. minChildSize : define minimux child size
+    3. maxChildSize : define maximum child size
+    4. expend : true/false (if true : fill available height)
+    5. controller
+]
 
 
 -----------------------------------------------------------------------------
