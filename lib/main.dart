@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_prepare_lesson/components/app_bar_components_part1.dart';
+import 'package:flutter_prepare_lesson/components/app_bar_components_part2.dart';
+import 'package:flutter_prepare_lesson/components/body_components.dart';
+import 'package:flutter_prepare_lesson/components/button_navigation_bar_component.dart';
+import 'package:flutter_prepare_lesson/components/drawer_components_part1.dart';
+import 'package:flutter_prepare_lesson/components/drawer_components_part2.dart';
+import 'package:flutter_prepare_lesson/components/floating_action_button_component.dart';
 import 'package:flutter_prepare_lesson/layout/column_widget.dart';
 import 'package:flutter_prepare_lesson/layout/container_widget.dart';
 import 'package:flutter_prepare_lesson/layout/expanded_widget.dart';
@@ -30,7 +37,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner:  false,
-      home:DraggableScrollWidget()
+      home:ButtonNavigationBarComponent()
     );
   }
 }

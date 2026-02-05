@@ -1,0 +1,51 @@
+1. AppBar? 
+=>AppBar គឺជា ផ្នែកខាងលើ នៃទំព័រមួយនៅក្នុង Flutter Material app។
+
++Propoties useful in AppBar [
+
+    Property	                 Type	                detail
+----------------------------------------------------------------------------------------
+    title	                     Widget	                ចំណងជើងទំព័រ (Text ឬ widget ផ្សេង)
+    leading	                     Widget	                Icon ឬ Button ខាងឆ្វេង (Back/Menu)
+    actions    	                 List<Widget>	        List Icon/Buttons ខាងស្ដាំ
+    backgroundColor	             Color	                ពណ៌ផ្ទៃ AppBar
+    elevation	                 double	                កម្រិត shadow
+    centerTitle	                 bool	                ចង់កណ្តាល title ឬកន្លែង default left
+    bottom	                     PreferredSizeWidget	TabBar ឬ bottom widget ផ្សេង
+    flexibleSpace	             Widget	                Widget សម្រាប់ UI flexible, រូបភាព ឬ gradient
+    toolbarHeight	             double	                កម្ពស់ AppBar
+    automaticallyImplyLeading	 bool	                បង្ហាញ back button ឬក៏ទេ
+
+]
+
+===================================================================================================
+2. Body?
+=>Bodyគឺជា content area នៅក្រោម AppBar
+អ្វីគ្រប់យ៉ាងដែលអ្នកចង់បង្ហាញនៅលើ screen គឺ put នៅក្នុង body
+Body type: គឺជា Widget, អាចជាមួយ Container, Column, ListView, GridView, Stack, SingleChildScrollView, CustomScrollView, …
+
+
+
+=========================================================================================
+3.Drawer? 
+=>Drawer គឺជាsidebarmenuដែលអាចslideចេញពី left (default) 
+ឬ right (endDrawer)។ជាទូទៅប្រើសម្រាប់ navigation menu ឬ settings។
+==================================================================
+
+4.ButtonNagivationBar?
+=>Bottom Navigation Bar គឺជាប៊ូតុងនៅខាងក្រោមអេក្រង់
+ប្រើសម្រាប់ ប្តូរទំព័រ (Page) ដូចជា៖Home,Search,Profile។
+ ក្នុង Flutter វា មិនមែនប្តូរ Page ដោយ Navigator ទេ។
+ វា ប្តូរ Widget តាម index។
+
+
+ +Propoties to use with ButtonNagivationBar[
+    1. items : use for set Icon and item in button bar
+    2. currentIndex : tell flutter page who active
+    3. onTap : catch event when clicked
+    4. selectItemColor : show color tap who active
+    5. unselectedItemColor  : show color top who not active
+    6. backgroundColor  : color button bar
+    7. iconSize : size of icon
+    
+ ]
