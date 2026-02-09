@@ -12,6 +12,7 @@ import 'package:flutter_prepare_lesson/layout/expanded_widget.dart';
 import 'package:flutter_prepare_lesson/layout/flexible_widget.dart';
 import 'package:flutter_prepare_lesson/layout/row_widget.dart';
 import 'package:flutter_prepare_lesson/layout/stack_widget.dart';
+import 'package:flutter_prepare_lesson/navigation/page/navigation_home_page.dart';
 import 'package:flutter_prepare_lesson/scrollable_widget/custom_scroll_view_widget_part1.dart';
 import 'package:flutter_prepare_lesson/scrollable_widget/custom_scroll_view_widget_part2.dart';
 import 'package:flutter_prepare_lesson/scrollable_widget/draggable_scroll_widget.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner:  false,
-      home:ButtonNavigationBarComponent()
+      home:NavigationHomePage()
     );
   }
 }

@@ -1,0 +1,16 @@
+1. What is navigation? 
+=> navigation in flutter is a widget use for change page 
+or redirect page in app.
+
+2. Type of navigation : 
+=> navigation having to many type : 
+    1. Stack navigation(Navigator.Push/Pop) : វាអាចទៅPageបន្ទាប់
+    ហើយវាអាចត្រឡប់មកវិញបាន។​
+
+    2. Replacement navigation (pushReplacement) : វាអាចទៅPage
+    បន្ទាប់បាន ប៉ុន្តែវាជំនួសPageចាស់មានន័យថា វាមិនអ​នុញ្ញាត្តឲ្យត្រឡប់មកPageដើមវិញទេ។
+    
+    3. Clear Stack navigation
+    
+    4. Named Route navigation : ប្រើប្រាស់វាដើម្បីប្តូរPageដែរ ប៉ុន្តែប្រើតាមរយះ
+    ឈ្មោះរបស់ Route ឬ​ end-point
