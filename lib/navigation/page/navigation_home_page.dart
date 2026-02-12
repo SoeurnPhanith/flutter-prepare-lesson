@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_prepare_lesson/navigation/model/navigation_product_model.dart';
-import 'package:flutter_prepare_lesson/navigation/page/navigation_detail_page.dart';
+import 'package:flutter_prepare_lesson/components_ui/navigation_detail_page.dart';
 
 class NavigationHomePage extends StatelessWidget {
   const NavigationHomePage({super.key});

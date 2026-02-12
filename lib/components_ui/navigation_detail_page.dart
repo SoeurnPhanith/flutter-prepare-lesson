@@ -126,7 +126,7 @@ class NavigationDetailPage extends StatelessWidget {
                     height: 52,
                     child: ElevatedButton.icon(
                       onPressed: () {
-                        // ✅ TODO: Add to cart logic here
+                        //TODO: Add to cart logic here
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             content: Text("${products.name} added to cart"),
