@@ -3,6 +3,8 @@ import 'package:flutter_prepare_lesson/advance_components_ui/date_time_picker_to
 import 'package:flutter_prepare_lesson/advance_components_ui/image_picker_todo_multiple_image.dart';
 import 'package:flutter_prepare_lesson/advance_components_ui/image_picker_todo_single_image.dart';
 import 'package:flutter_prepare_lesson/advance_components_ui/text_field/login_form.dart';
+import 'package:flutter_prepare_lesson/advance_components_ui/video_picker_and_video_player_todo.dart';
+import 'package:flutter_prepare_lesson/advance_components_ui/video_render_from_assets.dart';
 import 'package:flutter_prepare_lesson/components_ui/app_bar_components_part1.dart';
 import 'package:flutter_prepare_lesson/components_ui/app_bar_components_part2.dart';
 import 'package:flutter_prepare_lesson/components_ui/body_components.dart';
@@ -42,7 +44,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner:  false,
-      home:DateTimePickerTodo()
+      home:VideoRenderFromAssets()
     );
   }
 }

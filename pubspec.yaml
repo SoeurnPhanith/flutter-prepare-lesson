@@ -37,6 +37,7 @@ dependencies:
   smooth_page_indicator: ^2.0.1
   image_picker: ^1.2.1
   intl: ^0.19.0   #for format date
+  video_player: ^2.10.1
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +64,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/videos/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

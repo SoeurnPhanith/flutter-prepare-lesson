@@ -48,3 +48,23 @@ with form....
         📆⏰ Or both Date and Time together
 
     
+========================================================================
+
+4. VideoPicker?
+  1.Video Picker ក្នុង Flutter ជាអ្វី?
+    =>Video Picker គឺការប្រើ image_picker plugin ដើម្បី៖
+      📹 ថតវីដេអូពី Camera
+      🎬 ជ្រើសវីដេអូពី Gallery
+    Flutter មិនមាន widget Video Picker ដាច់ដោយឡែកទេ
+    វាប្រើ image_picker ដូច Image Picker តែប្រើ pickVideo()។
+
+  2.ហេតុអ្វីត្រូវប្រើ Video Picker?
+    -ប្រើនៅពេល App ត្រូវការ៖
+    -Upload វីដេអូទៅ server
+    -Post video (like Facebook / TikTok)
+    -Submit assignment video (School app)
+    -Upload product demo
+
+  3.library to use with it: 
+    1. image_picker
+    2. video_player
